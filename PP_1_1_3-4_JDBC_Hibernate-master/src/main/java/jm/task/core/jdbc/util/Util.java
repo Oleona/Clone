@@ -12,7 +12,6 @@ public class Util {
 
     public static Connection getConnection() {
         Connection connection = null;
-        // try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD)) {
         try {
             Class.forName(DRIVER);
             connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
